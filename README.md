@@ -1,7 +1,3 @@
-Certainly! Here's a README file tailored for an image generation app using the Flux image model and deployed on Akash Network:
-
----
-
 # ✨ Flux Image Generator App ✨
 
 [![Akash Network Deployment Status](https://img.shields.io/badge/Deployment%20Status-Active-brightgreen)](https://akash.network)
