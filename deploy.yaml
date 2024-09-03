@@ -1,0 +1,31 @@
+---
+version: "2.0"
+services:
+  streamlit-app:
+    image: fenildocker/flux-web-akash
+    expose:
+      - port: 8501
+        as: 80
+        to:
+          - global: true
+profiles:
+  compute:
+    streamlit-app:
+      resources:
+        cpu:
+          units: 2
+        memory:
+          size: 2Gi
+        storage:
+          - size: 10Gi
+  placement:
+    akash:
+      pricing:
+        streamlit-app:
+          denom: uakt
+          amount: 5000
+deployment:
+  streamlit-app:
+    akash:
+      profile: streamlit-app
+      count: 1
