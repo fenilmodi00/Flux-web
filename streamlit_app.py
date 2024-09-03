@@ -11,7 +11,7 @@ st.set_page_config(page_title="Replicate Image Generator",
                    page_icon=":bridge_at_night:",
                    layout="wide")
 icon.show_icon(":foggy:")
-st.markdown("# :rainbow[Text-to-Image Artistry Studio]")
+st.markdown("# :rainbow[Text-to-Image Flux]")
 
 # API Tokens and endpoints from `.streamlit/secrets.toml` file
 REPLICATE_API_TOKEN = st.secrets["general"]["REPLICATE_API_TOKEN"]
@@ -70,9 +70,9 @@ def configure_sidebar() -> None:
             ---
             Follow me on:
 
-            𝕏 → [@tonykipkemboi](https://twitter.com/tonykipkemboi)
+            𝕏 → [@Fenil_TW](https://x.com/Fenil_TW)
 
-            LinkedIn → [Tony Kipkemboi](https://www.linkedin.com/in/tonykipkemboi)
+            LinkedIn → [Fenil Modi](https://www.linkedin.com/in/fenilmodi-li)
 
             """
         )
